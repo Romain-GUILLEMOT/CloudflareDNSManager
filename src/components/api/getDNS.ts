@@ -18,7 +18,7 @@ export function getDNS() {
         });
 
         if (response.ok) {
-            const data = await response.json();
+            const data: any = await response.json();
 
             set(data['result']);
         } else {
