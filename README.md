@@ -1,47 +1,72 @@
-# Svelte + TS + Vite
+# Gestionnaire de Zone DNS Cloudflare
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+Ce projet est un gestionnaire de zone DNS pour Cloudflare, construit avec Svelte, TypeScript, et Vite. Il permet de gérer vos zones DNS sur Cloudflare en modifiant, ajoutant, supprimant et listant toutes vos zones.
 
-## Recommended IDE Setup
+## Caractéristiques
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- Liste toutes vos zones DNS
+- Ajoute de nouvelles zones
+- Modifie les zones existantes
+- Supprime les zones
 
-## Need an official Svelte framework?
+Il est facile à utiliser et très rapide grâce à l'utilisation de Svelte, TypeScript et Vite.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## Prérequis
 
-## Technical considerations
+- Node.js (v20.0.0 ou supérieure)
+- Yarn (v1.22 ou supérieure)
 
-**Why use this over SvelteKit?**
+## Dépendances
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+Les principales dépendances de ce projet comprennent:
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+- Svelte: un cadre JavaScript pour construire des interfaces utilisateur.
+- Vite: un outil de construction qui est plus rapide que webpack.
+- TypeScript: un sur-ensemble typé de JavaScript qui compile en JavaScript pur.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+## Instructions de mise en place
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+1. Clonez le dépot git:
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```shell
+git clone https://github.com/Romain-GUILLEMOT/CloudflareDNSManager.git
 ```
+
+2. Naviguez jusqu'à le dossier du projet:
+
+```shell
+cd cloudflare-dns-manager 
+```
+
+3. Installez les dépendances:
+
+```shell
+yarn install
+```
+
+4. Modifier les variables de la configuration
+
+Vous devez renommer le fichier `src/config.json.exemple` en `config.json` et modifier les données présentes à l'intérieur.
+
+5. Démarrer le serveur de développement:
+
+```shell
+yarn dev
+```
+
+Allez sur http://localhost:5000 dans votre navigateur pour voir l'application.
+
+## Mode Développement
+
+
+Il est OBLIGATOIRE d'utiliser le mode développement lorsqu'aucun nom de domaine n'est présent pour éviter d'être bloqué par les CORS de l'API Cloudflare.
+
+
+## Licence
+
+Ce projet est sous licence libre. Vous êtes libre de l'utiliser, de le modifier et de le redistribuer selon les termes de la licence.
+
+## Statut du projet
+
+Veuillez noter que ce projet est encore en cours de développement (Work In Progress – WIP).
+Les fonctionnalités peuvent changer, et il peut y avoir des bugs ! Si vous rencontrez un problème
