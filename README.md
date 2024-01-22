@@ -8,6 +8,7 @@ Ce projet est un gestionnaire de zone DNS pour Cloudflare, construit avec Svelte
 - Ajoute de nouvelles zones
 - Modifie les zones existantes
 - Supprime les zones
+- Mode sombre et clair
 
 Il est facile à utiliser et très rapide grâce à l'utilisation de Svelte, TypeScript et Vite.
 
