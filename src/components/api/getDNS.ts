@@ -7,8 +7,6 @@ const debug = config.APP_DEBUG;
 export function getDNS() {
     const { subscribe, set } = writable<null | any[]>(null);
 
-
-
     const updateData = async () => {
         const response = await ky.get((debug ? 'https://corsproxy.io/?' : '') + `https://api.cloudflare.com/client/v4/zones/${config.CF_ZONE}/dns_records`, {
             headers: {
