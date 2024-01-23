@@ -2,7 +2,7 @@ import {writable} from "svelte/store";
 import ky from "ky";
 import envGet from "../../lib/utils";
 
-const debug = envGet('APP_DEBUG');
+const debug =true;
 
 export function getDNS() {
     const { subscribe, set } = writable<null | any[]>(null);
