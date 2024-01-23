@@ -22,13 +22,14 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
+      - name: Create .env file
+        run: echo "CF_KEY=${{ secrets.CF_KEY }}\nCF_ZONE=${{ secrets.CF_ZONE }}\nCF_EMAIL=${{ secrets.CF_EMAIL }}" > .env
+
       - name: Build project
         run: yarn build
         env:
           GHUB_PAGES_RG_FJKZ65GDVZMf: "true"
-          CF_KEY: ${{ secrets.CF_KEY }}
-          CF_ZONE: "test"
-          CF_EMAIL: ${{ secrets.CF_EMAIL }}
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
