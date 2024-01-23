@@ -16,15 +16,15 @@ interface EnvVariables {
 export default function envGet(element: keyof EnvVariables): string | boolean {
   switch (element) {
     case 'APP_DEBUG':
-      return import.meta.env.APP_DEBUG === 'true';
+      return import.meta.env.VITE_APP_DEBUG === 'true';
     case 'CF_KEY':
-      return import.meta.env.CF_KEY;
+      return import.meta.env.VITE_CF_KEY;
     case 'CF_ZONE':
-      return import.meta.env.CF_ZONE;
+      return import.meta.env.VITE_CF_ZONE;
     case 'CORS_KEY':
-      return import.meta.env.CORS_KEY;
+      return import.meta.env.VITE_CORS_KEY;
     case 'CF_EMAIL':
-      return import.meta.env.CF_EMAIL
+      return import.meta.env.VITE_CF_EMAIL
     default:
       return '';
   }

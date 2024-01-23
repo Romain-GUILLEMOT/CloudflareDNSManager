@@ -24,9 +24,11 @@
     "@zerodevx/svelte-toast": "^0.9.5",
     "autoprefixer": "^10.4.16",
     "ky": "^1.2.0",
+    "path": "^0.12.7",
     "postcss": "^8.4.33",
     "svelte-fa": "^4.0.2",
     "svelte-query": "^0.0.1-alpha1",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "url": "^0.11.3"
   }
 }
