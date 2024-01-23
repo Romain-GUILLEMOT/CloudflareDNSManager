@@ -1,6 +1,6 @@
-<script lang="ts">
+w<script lang="ts">
     import {truncateString, type ZoneElement} from "../lib/utils.js";
-    import {faArrowDown, faArrowUp, faHeart} from "@fortawesome/free-solid-svg-icons";
+    import {faArrowDown, faHeart} from "@fortawesome/free-solid-svg-icons";
     import Button from "./elements/Button.svelte";
     import DnsEdit from "./DnsEdit.svelte";
     import Modal from "./elements/Modal.svelte";
