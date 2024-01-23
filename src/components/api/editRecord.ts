@@ -1,11 +1,10 @@
 import ky from "ky";
 import envGet, {type API_ANSWER, type CloudFlare_EDIT} from "../../lib/utils";
 
-const debug = envGet('APP_DEBUG');
 
 export async function editRecord(id: string, content: string, name: string, proxied: boolean, type: string, comment: string | undefined | null): Promise<API_ANSWER> {
 
-    const response = await ky.put((debug ? 'https://corsproxy.io/?' : '') + `https://api.cloudflare.com/client/v4/zones/${envGet('CF_ZONE')}/dns_records/${id}`, {
+    const response = await ky.put('https://corsproxy.io/?' + `https://api.cloudflare.com/client/v4/zones/${envGet('CF_ZONE')}/dns_records/${id}`, {
         headers: {
             'Authorization': `Bearer ${envGet('CF_KEY')}`,
         },
