@@ -23,7 +23,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Create .env file
-        run: echo "CF_KEY=${{ secrets.CF_KEY }}\nCF_ZONE=${{ secrets.CF_ZONE }}\nCF_EMAIL=${{ secrets.CF_EMAIL }}" > .env
+        run: echo "CF_KEY=${{ secrets.CF_KEY }}\nCF_ZONE="test"\nCF_EMAIL=${{ secrets.CF_EMAIL }}" > .env
 
       - name: Build project
         run: yarn build
