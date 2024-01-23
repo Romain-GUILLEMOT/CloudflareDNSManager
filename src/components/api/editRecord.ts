@@ -4,7 +4,7 @@ import envGet, {type API_ANSWER, type CloudFlare_EDIT} from "../../lib/utils";
 
 export async function editRecord(id: string, content: string, name: string, proxied: boolean, type: string, comment: string | undefined | null): Promise<API_ANSWER> {
 
-    const response = await ky.put('https://corsproxy.io/?' + `https://api.cloudflare.com/client/v4/zones/${envGet('CF_ZONE')}/dns_records/${id}`, {
+    const response = await ky.put('https://cors.romain-guillemot.dev/' + `https://api.cloudflare.com/client/v4/zones/${envGet('CF_ZONE')}/dns_records/${id}`, {
         headers: {
             'Authorization': `Bearer ${envGet('CF_KEY')}`,
         },

@@ -7,10 +7,13 @@
     import {onMount} from "svelte";
 
     let zones: ZoneElement[] = [];
-    const dnsData = getDNS().subscribe(value => {
-         zones = value as ZoneElement[]
-     });
-    onMount(() => dnsData());
+    onMount(() => {
+        const dnsStore = getDNS();
+        dnsStore.subscribe((value) => {
+            console.log(value);
+            zones = value as ZoneElement[];
+        });
+    });
 
 </script>
 
