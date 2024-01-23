@@ -46,6 +46,9 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
+        env:
+          CF_KEY: ${{ secrets.CF_KEY }}
+          CF_ZONE: ${{ secrets.CF_ZONE }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
