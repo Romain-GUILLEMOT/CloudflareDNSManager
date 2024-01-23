@@ -1,10 +1,4 @@
-export function truncateString(str: string) {
-  if (str.length > 37) {
-    return str.substring(0, 37 - 3) + "...";
-  } else {
-    return str;
-  }
-}
+
 interface EnvVariables {
   APP_DEBUG?: string;
   CF_KEY?: string;
@@ -13,22 +7,7 @@ interface EnvVariables {
   CORS_KEY?: string;
 }
 
-export default function envGet(element: keyof EnvVariables): string | boolean {
-  switch (element) {
-    case 'APP_DEBUG':
-      return import.meta.env.VITE_APP_DEBUG === 'true';
-    case 'CF_KEY':
-      return import.meta.env.VITE_CF_KEY;
-    case 'CF_ZONE':
-      return import.meta.env.VITE_CF_ZONE;
-    case 'CORS_KEY':
-      return import.meta.env.VITE_CORS_KEY;
-    case 'CF_EMAIL':
-      return import.meta.env.VITE_CF_EMAIL
-    default:
-      return '';
-  }
-}
+
 export interface ZoneElement {
   id: string;
   zone_id: string;
@@ -81,4 +60,28 @@ export interface CloudFlare_EDIT {
 export interface API_ANSWER {
   status: boolean;
   message: string;
+}
+
+export function truncateString(str: string) {
+  if (str.length > 37) {
+    return str.substring(0, 37 - 3) + "...";
+  } else {
+    return str;
+  }
+}
+export default function envGet(element: keyof EnvVariables): string | boolean {
+  switch (element) {
+    case 'APP_DEBUG':
+      return import.meta.env.VITE_APP_DEBUG === 'true';
+    case 'CF_KEY':
+      return import.meta.env.VITE_CF_KEY;
+    case 'CF_ZONE':
+      return import.meta.env.VITE_CF_ZONE;
+    case 'CORS_KEY':
+      return import.meta.env.VITE_CORS_KEY;
+    case 'CF_EMAIL':
+      return import.meta.env.VITE_CF_EMAIL
+    default:
+      return '';
+  }
 }
