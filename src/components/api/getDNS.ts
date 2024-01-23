@@ -1,17 +1,17 @@
 import {writable} from "svelte/store";
 import ky from "ky";
-import config from "../../config.json";
+import envGet from "../../lib/utils";
 
-const debug = config.APP_DEBUG;
+const debug = envGet('APP_DEBUG');
 
 export function getDNS() {
     const { subscribe, set } = writable<null | any[]>(null);
 
     const updateData = async () => {
-        const response = await ky.get((debug ? 'https://corsproxy.io/?' : '') + `https://api.cloudflare.com/client/v4/zones/${config.CF_ZONE}/dns_records`, {
+        const response = await ky.get((debug ? 'https://corsproxy.io/?' : '') + `https://api.cloudflare.com/client/v4/zones/${envGet('CF_ZONE')}/dns_records`, {
             headers: {
-                'Authorization': `Bearer ${config.CF_KEY}`,
-                'x-cors-api-key': 'temp_d946b77ced374e3c1b4d5f60da7776d5'
+                'Authorization': `Bearer ${envGet('CF_KEY')}`,
+                'x-cors-api-key': envGet('CORS_KEY') as string
             }
         });
 

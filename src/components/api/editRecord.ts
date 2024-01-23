@@ -1,16 +1,14 @@
-import {writable} from "svelte/store";
 import ky from "ky";
-import config from "../../config.json";
-import type {API_ANSWER, CloudFlare_EDIT} from "../../lib/utils";
+import envGet, {type API_ANSWER, type CloudFlare_EDIT} from "../../lib/utils";
 
-const debug = config.APP_DEBUG;
+const debug = envGet('APP_DEBUG');
 
 export async function editRecord(id: string, content: string, name: string, proxied: boolean, type: string, comment: string | undefined | null): Promise<API_ANSWER> {
 
-    const response = await ky.put((debug ? 'https://proxy.cors.sh/' : '') + `https://api.cloudflare.com/client/v4/zones/${config.CF_ZONE}/dns_records/${id}`, {
+    const response = await ky.put((debug ? 'https://proxy.cors.sh/' : '') + `https://api.cloudflare.com/client/v4/zones/${envGet('CF_ZONE')}/dns_records/${id}`, {
         headers: {
-            'Authorization': `Bearer ${config.CF_KEY}`,
-            'x-cors-api-key': 'temp_d946b77ced374e3c1b4d5f60da7776d5'
+            'Authorization': `Bearer ${envGet('CF_KEY')}`,
+            'x-cors-api-key': envGet("CORS_KEY") as string
         },
         json: {
             'content': content,

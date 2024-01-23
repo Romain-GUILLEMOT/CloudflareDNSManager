@@ -5,8 +5,26 @@ export function truncateString(str: string) {
     return str;
   }
 }
-export default function data() {
-  return 'data';
+interface EnvVariables {
+  APP_DEBUG?: string;
+  CF_KEY?: string;
+  CF_ZONE?: string;
+  CORS_KEY?: string;
+}
+
+export default function envGet(element: keyof EnvVariables): string | boolean {
+  switch (element) {
+    case 'APP_DEBUG':
+      return import.meta.env.APP_DEBUG === 'true';
+    case 'CF_KEY':
+      return import.meta.env.CF_KEY;
+    case 'CF_ZONE':
+      return import.meta.env.CF_ZONE;
+    case 'CORS_KEY':
+      return import.meta.env.CORS_KEY;
+    default:
+      return '';
+  }
 }
 export interface ZoneElement {
   id: string;
