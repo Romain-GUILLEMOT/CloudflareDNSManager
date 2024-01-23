@@ -27,7 +27,7 @@ jobs:
         env:
           GHUB_PAGES_RG_FJKZ65GDVZMf: "true"
           CF_KEY: ${{ secrets.CF_KEY }}
-          CF_ZONE: ${{ secrets.CF_ZONE }}
+          CF_ZONE: "test"
           CF_EMAIL: ${{ secrets.CF_EMAIL }}
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
