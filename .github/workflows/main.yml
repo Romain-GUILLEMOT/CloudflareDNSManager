@@ -24,6 +24,8 @@ jobs:
 
       - name: Build project
         run: yarn build
+        env:
+          GITHUB_PAGES_RG_FJKZ65GDVZMf: true
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
