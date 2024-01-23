@@ -51,6 +51,7 @@ jobs:
         env:
           CF_KEY: ${{ secrets.CF_KEY }}
           CF_ZONE: ${{ secrets.CF_ZONE }}
+          CF_EMAIL: ${{ secrets.CF_EMAIL }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist

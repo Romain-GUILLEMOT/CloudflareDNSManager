@@ -9,6 +9,7 @@ interface EnvVariables {
   APP_DEBUG?: string;
   CF_KEY?: string;
   CF_ZONE?: string;
+  CF_EMAIL?: string;
   CORS_KEY?: string;
 }
 
@@ -22,6 +23,8 @@ export default function envGet(element: keyof EnvVariables): string | boolean {
       return import.meta.env.CF_ZONE;
     case 'CORS_KEY':
       return import.meta.env.CORS_KEY;
+    case 'CF_EMAIL':
+      return import.meta.env.CF_EMAIL
     default:
       return '';
   }

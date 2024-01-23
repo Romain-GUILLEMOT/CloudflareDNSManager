@@ -11,7 +11,9 @@ export function getDNS() {
         const response = await ky.get((debug ? 'https://corsproxy.io/?' : '') + `https://api.cloudflare.com/client/v4/zones/${envGet('CF_ZONE')}/dns_records`, {
             headers: {
                 'Authorization': `Bearer ${envGet('CF_KEY')}`,
-                'x-cors-api-key': envGet('CORS_KEY') as string
+                'x-cors-api-key': envGet('CORS_KEY') as string,
+                'X-Auth-Email': envGet('CF_EMAIL') as string,
+                'X-Auth-Key': envGet('CF_KEY') as string
             }
         });
 
