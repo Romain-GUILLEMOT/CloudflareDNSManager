@@ -1,4 +1,4 @@
-w<script lang="ts">
+<script lang="ts">
     import {truncateString, type ZoneElement} from "../lib/utils.js";
     import {faArrowDown, faHeart} from "@fortawesome/free-solid-svg-icons";
     import Button from "./elements/Button.svelte";

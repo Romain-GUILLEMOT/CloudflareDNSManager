@@ -10,7 +10,6 @@
     onMount(() => {
         const dnsStore = getDNS();
         dnsStore.subscribe((value) => {
-            console.log(value);
             zones = value as ZoneElement[];
         });
     });
