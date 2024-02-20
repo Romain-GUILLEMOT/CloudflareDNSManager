@@ -64,7 +64,7 @@
                             <thead>
                             <tr>
                                 <th scope="col"
-                                    class="px-3.5 py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
+                                    class="hidden sm:table-cell px-3.5 py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
                                     <p class="group inline-flex">
                                         Type
                                     </p>
@@ -76,25 +76,25 @@
                                     </p>
                                 </th>
                                 <th scope="col"
-                                    class=" py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
+                                    class="hidden sm:table-cell  py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
                                     <p class="group inline-flex">
                                         Content
                                     </p>
                                 </th>
                                 <th scope="col"
-                                    class=" py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
+                                    class="hidden lg:table-cell  py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
                                     <p class="group inline-flex">
                                         Proxied
                                     </p>
                                 </th>
                                 <th scope="col"
-                                    class=" py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
+                                    class="hidden lg:table-cell  py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
                                     <p class="group inline-flex">
                                         TTL
                                     </p>
                                 </th>
                                 <th scope="col"
-                                    class=" py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
+                                    class="hidden lg:table-cell  py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
                                     <p class="group inline-flex">
                                         Actions
                                     </p>
