@@ -1,5 +1,5 @@
-<table class="min-w-full divide-y divide-gray-300">
-    <thead>
+<table class="min-w-full divide-y divide-gray-300 bg-light-quaternary dark:bg-dark-tertiary">
+<thead>
     <tr>
         <th scope="col" class="hidden sm:table-cell px-3 py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
             <p class="group inline-flex">

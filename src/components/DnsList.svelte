@@ -42,18 +42,12 @@
             </div>
         </div>
     {:else}
-        <div class="px-4 sm:px-6 lg:px-8 mx-24 mt-8">
+        <div class="px-4 sm:px-6 lg:px-8 mx-8 lg:mx-24 mt-8">
             <div class="sm:flex sm:items-center">
                 <div class="sm:flex-auto">
                     <h1 class="text-base font-semibold leading-6 text-gray-700 dark:text-slate-100">DNS Zone</h1>
                     <p class="mt-2 text-sm text-gray-600 dark:text-slate-200">A list of all dns zone. (Saved on
                         Cloudflare)</p>
-                </div>
-                <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-                    <button type="button"
-                            class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                        Add record
-                    </button>
                 </div>
             </div>
 
@@ -70,7 +64,7 @@
                                     </p>
                                 </th>
                                 <th scope="col"
-                                    class=" py-3.5 text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
+                                    class="text-center  py-3.5 sm:text-left text-sm font-semibold text-gray-600 dark:text-slate-200">
                                     <p class="group inline-flex">
                                         Name
                                     </p>

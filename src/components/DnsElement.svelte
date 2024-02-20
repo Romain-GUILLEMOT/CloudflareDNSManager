@@ -33,8 +33,8 @@
         <td class="px-3.5 whitespace-nowrap py-2 text-sm text-gray-700 dark:text-slate-200 ">
             <div class="my-auto rounded-md overflow-ellipsis overflow-hidden h-8">{element.type}</div>
         </td>
-        <td class="whitespace-nowrap py-2 text-sm text-gray-700 dark:text-slate-200 ">
-            <div class="my-auto rounded-md overflow-ellipsis overflow-hidden h-8"
+        <td class=" whitespace-nowrap py-2 text-sm text-gray-700 dark:text-slate-200 ">
+            <div class=" my-auto rounded-md overflow-ellipsis overflow-hidden h-8"
                  title={element.name.split('.')[0]}>{truncateString(element.name.split('.')[0])}</div>
         </td>
         <td class="whitespace-nowrap py-2 text-sm text-gray-700 dark:text-slate-200 ">
@@ -67,7 +67,7 @@
             <div class="my-auto rounded-md overflow-ellipsis overflow-hidden h-8">{element.type}</div>
         </td>
         <td class="whitespace-nowrap py-2 text-sm text-gray-700 dark:text-slate-200 ">
-            <div class="my-auto rounded-md overflow-ellipsis overflow-hidden h-8"
+            <div class="text-center sm:text-left my-auto rounded-md overflow-ellipsis overflow-hidden h-8"
                  title={element.name.split('.')[0]}>{truncateString(element.name.split('.')[0])}</div>
         </td>
         <td class="hidden sm:table-cell whitespace-nowrap py-2 text-sm text-gray-700 dark:text-slate-200 ">
