@@ -33,105 +33,105 @@
         </th>
     </tr>
     </thead>
-    <tbody class="divide-y divide-gray-200 bg-dark-secondary">
+    <tbody class="divide-y divide-gray-200 bg-light-tertiary dark:bg-dark-secondary">
     <tr>
         <td class="hidden sm:table-cell whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0 animate-pulse ">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden sm:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
     </tr>
     <tr>
         <td class="hidden sm:table-cell whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0 animate-pulse ">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden sm:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
     </tr>
     <tr>
         <td class="hidden sm:table-cell whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0 animate-pulse ">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden sm:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
     </tr>
     <tr>
         <td class="hidden sm:table-cell whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0 animate-pulse ">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden sm:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
     </tr>
     <tr>
         <td class="hidden sm:table-cell whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0 animate-pulse ">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden sm:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
         <td class="hidden lg:table-cell relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm sm:pr-0">
-            <div class="bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
+            <div class="bg-slate-200 dark:bg-dark-primary  animate-pulse px-6 py-2 mx-2 rounded-md"></div>
         </td>
     </tr>
 
